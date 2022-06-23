@@ -1,0 +1,274 @@
+.section-slider-subasta {
+    
+    padding: 3rem 0;
+    .content-codigo {
+        @media (min-width: 576px) {
+            margin-left: 40px;
+        }
+        .codigo {
+            font-weight: bold;
+            color: #ED954A;
+        }
+    }
+    .badge-subasta {
+        background-color: #FFE9D4 !important;
+        padding: 0.65em 0.85em;
+        font-size: .8rem;
+        color: #61605E;
+        font-weight: 400;
+    }
+    .sliderFull {
+        .slick-slide {
+            padding: 0 0.3rem;
+        }
+        .slick-next,
+        .slick-prev {
+            border-radius: 50px;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            @media (min-width: 576px) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .slick-next {
+            right: -20px;
+            background-image: url("/images/angleright.svg");
+            @media (min-width: 576px) {
+                right: -40px;
+            }
+        }
+        .slick-prev {
+            left: -20px;
+            background-image: url('/images/angleleft.svg');
+            @media (min-width: 576px) {
+                left: -40px;
+            }
+        }
+        .slick-next:before,
+        .slick-prev:before {
+            content: '';
+        }
+    }
+    .sliderNav {
+        .slick-slide {
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+        }
+        .slick-next,
+        .slick-prev {
+            width: 15px;
+            height: calc(100% - 8px);
+            top: calc(50% - 4px);
+            background: #ED954A44;
+            background-size: 15px;
+            background-position: center;
+            background-repeat: no-repeat;
+            @media (min-width: 576px) {
+                width: 25px;
+                background-size: 20px;
+            }
+        }
+        .slick-next {
+            right: -15px;
+            background-image: url("/images/angleright2.svg");
+            @media (min-width: 576px) {
+                right: -30px;
+            }
+        }
+        .slick-prev {
+            left: -15px;
+            background-image: url('/images/angleleft2.svg');
+            @media (min-width: 576px) {
+                left: -30px;
+            }
+        }
+        .slick-next:before,
+        .slick-prev:before {
+            content: '';
+        }
+    }
+    .btn-pujar {
+        padding-left: 60px;
+        padding-right: 2rem;
+        background: #ED954A;
+        border-radius: 50px;
+        color: #fff;
+        width: 100%;
+        height: 4rem;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 2.5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+    .btn-pujar:focus {
+        box-shadow: none;
+        color: #000;
+    }
+    .btn-pujar:before {
+        background: #ffffff;
+        border-radius: 50px;
+    }
+    .btn-pujar:hover {
+        color: #000;
+    }
+    .logo-puja {
+        width: 3.3rem;
+        height: 3.3rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 0.3rem;
+        left: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-puja img {
+        width: 100%;
+    }
+    .content-box-puja {
+        padding: 1rem 0.5rem 0 0.5rem;
+        @media (min-width: 1200px) {
+            padding-top: 1rem;
+        }
+        @media (min-width: 1400px) {
+            padding-top: 2rem;
+        }
+        &.left {
+            @media (min-width: 1200px) {
+                padding-left: 1rem;
+                padding-right: 0.5rem;
+            }
+            @media (min-width: 1400px) {
+                padding-left: 5rem;
+                padding-right: 1rem;
+            }
+        }
+        &.right {
+            @media (min-width: 1200px) {
+                padding-left: 0.5rem;
+                padding-right: 1rem;
+            }
+            @media (min-width: 1400px) {
+                padding-left: 1rem;
+                padding-right: 5rem;
+            }
+        }
+        .box-puja {
+            position: relative;
+            width: 100%;
+            background-color: #ED954A44;
+            border-radius: 15px;
+            transition: all .3s;
+            &:before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                background-color: #ED954A;
+                border-radius: 50px;
+            }
+            &:hover {
+                transform: scale(0.9);
+            }
+            .text-box-puja {
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                text-align: center;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                @media (min-width: 1200px) {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                }
+                @media (min-width: 1400px) {
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                }
+                p:nth-child(1) {
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+    .content-deposito {
+        padding: 1rem 0.5rem 0 0.5rem;
+        @media (min-width: 1200px) {
+            padding-top: 1.2rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        @media (min-width: 1400px) {
+            padding-top: 2rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        .box-deposito {
+            background-color: #99999944;
+            border-radius: 15px;
+            transition: all .3s;
+            &:hover {
+                transform: scale(0.9);
+            }
+            .text-box-deposito {
+                text-align: center;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                @media (min-width: 1200px) {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                }
+                p:nth-child(1) {
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                }
+                a {
+                    transition: all 0.3s;
+                    &:hover {
+                        color: #ED954A;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#ver-instrucciones {
+    cursor: pointer;
+}
+
+.fav-button {
+    width: 14px;
+}
+
+#modal-puja {
+    .modal-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #ED954A;
+        font-family: "BebasNeue";
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 1;
+
+    }
+    .modal-content{
+      box-shadow: 0px 42px 33px -8px rgb(0 0 0 / 35%);
+      border: none;
+    }
+    option:hover {
+        height: 38px;
+    }
+
+}

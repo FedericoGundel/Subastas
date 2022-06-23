@@ -1,0 +1,81 @@
+.nav-tabs {
+  padding: 2rem 1rem;
+  background-color: #322b36;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: space-around;
+  }
+  @media (min-width: 1320px) {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    background-color: transparent;
+    background-image: url("/images/bg-nav-subasta.png");
+  }
+  .nav-item {
+    .nav-link {
+      font-family: 'BebasNeue';
+      font-size: 0.8rem;
+      color: #ffffff;
+      background-color: transparent;
+      border: none;
+      border-radius: 15px;
+      white-space: nowrap;
+      @media (min-width: 768px) {
+        font-size: 0.8rem;
+      }
+      @media (min-width: 1000px) {
+        font-size: 1rem;
+      }
+      @media (min-width: 1320px) {
+        font-size: 1.5rem;
+      }
+      &:hover {
+        color: #ED954A;
+      }
+      &.active {
+        position: relative;
+        background-color: #ED954A;
+        &:hover {
+          color: #ffffff;
+        }
+        &:before {
+          @media (min-width: 768px) {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            clip-path: polygon(50% 40%, 0 0, 100% 0);
+            background-color: #ED954A;
+          }
+        }
+      }
+    }
+  }
+}
+.tab-content {
+  .tab-pane {
+    background-color: #ED954A44;
+    border-radius: 15px;
+    padding: 3rem 1rem;
+    @media (min-width: 768px) {
+      padding: 3rem 6rem;
+    }
+    .text-orange {
+      color: #ED954A;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    .text-bold {
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

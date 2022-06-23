@@ -1,0 +1,67 @@
+.bg-orange-claro {
+  background-color: rgba($color: #ED954A, $alpha: 0.3);
+}
+.description-faqs {
+  font-family: "Montserrat-Medium";
+  color: #61605E;
+}
+.accordion {
+  font-family: "Montserrat-Medium";
+  color: #61605E;
+  .title {
+    display: flex;
+    hr {
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    .text {
+      white-space: nowrap;
+      padding-right: 0.5rem;
+    }
+  }
+  .content-faqs {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 1rem 0;
+    justify-content: center;
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(2, 40%);
+      grid-gap: 1rem 2rem;
+    }
+    .accordion-item {
+      border: none;
+      .accordion-button {
+        padding: .6rem 3.75rem .6rem 1.25rem;
+        color: #61605E;
+        justify-content: center;
+        border: 1px solid rgba($color: #61605E, $alpha: 0.2);
+        &:after {
+          background-image: url('/images/plus-accordion.png');
+          position: absolute;
+          right: 0;
+          margin-right: 1.25rem;
+        }
+        &:not(.collapsed) {
+          background-color: rgba($color: #ED954A, $alpha: 0.3);
+          &:after {
+            background-image: url('/images/menos.svg');
+          }
+        }
+        &:focus {
+          z-index: 3;
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+      .accordion-body {
+        border: 1px solid rgba($color: #61605E, $alpha: 0.2);
+      }
+    }
+  }
+}
+
+
+
+
+

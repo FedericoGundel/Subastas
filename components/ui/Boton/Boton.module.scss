@@ -1,0 +1,53 @@
+.boton {
+  .btn-rounded {
+    border-radius: 50px;
+    line-height: 1.75;
+  }
+  .btn-custom {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .btn-orange-black {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #fff;
+    background: #ED954A;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    &:hover {
+      color: #202020;
+      border: 1px solid #202020;
+    }
+    &:before {
+      background: #fff;
+      border-radius: 50px;
+    }
+    &:focus {
+      box-shadow: none;
+      color: #202020;
+    }
+  }
+  .btn-center-out {
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+  }
+  .btn-center-out {
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scale(0);
+      transition-property: transform;
+      transition-duration: 0.3s;
+    }
+  }
+  .btn-center-out:hover:before,
+  .btn-center-out:focus:before,
+  .btn-center-out:active:before {
+    transform: scale(1.15);
+  }
+}

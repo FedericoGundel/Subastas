@@ -1,0 +1,28 @@
+.section-contacto {
+  padding-bottom: 5%;
+  .content-contact {
+    text-align: center;
+    .circle-contacto {
+      background-color: #FFE9D4;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .enlaces {
+      transition: all .3s;
+      &:hover {
+        color: #ED954A;
+      }
+    }
+  }
+  .horario {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,30 @@
+.section-dudas {
+  box-shadow:20px 5px 33px 10px rgb(0 0 0 / 35%);
+
+  padding: 5% 0;
+  padding-bottom: 8%;
+  position: relative;
+  .casa-gris {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 38vw;
+    z-index: -1;
+  }
+  .content-dudas {
+    text-align: center;
+    background-color: #EAEAEAaa;
+    border-radius: 15px;
+    padding: 3rem;
+    .title-dudas {
+      color: #ED954A;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: "BebasNeue";
+    }
+    .text-dudas {
+      font-size: 2rem;
+      font-family: "BebasNeue";
+    }
+  }
+}

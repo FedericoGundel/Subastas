@@ -1,0 +1,223 @@
+.banner {
+  filter: drop-shadow(5px 5px 5px #00000059);
+  &.registro{
+  @media (min-width: 768px) {
+    height: 145vh;
+  }
+  .img-banner{
+    @media (min-width: 768px) {
+    height: 140vh;
+  }
+}
+}
+  .title{
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+  border-bottom-right-radius: 90px;
+  padding-bottom: 3rem;
+  position: relative;
+  .fondo-logo {
+    position: absolute;
+    img {
+      filter: drop-shadow(5px 5px 5px #00000059);
+      @media (min-width: 992px) {
+        max-width: 400px;
+      }
+      @media (min-width: 1200px) {
+        max-width: 100%;
+      }
+    }
+  }
+  .img-banner {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    @media (min-width: 576px) {
+      border-bottom-left-radius: 90px;
+      border-bottom-right-radius: 90px;
+    }
+   
+    .content-banner {
+      // height: 70vh;
+      padding-top: 15vh;
+      padding-bottom: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      ul{
+        list-style: disc;
+    padding-left: 2rem;
+      }
+      @media (min-width: 768px) {
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+      }
+      .text-banner {
+        order: 1;
+        margin-top: 2rem;
+        @media (min-width: 768px) {
+          order: 0;
+        }
+        p {
+          border-left: 7px solid #ED954A;
+          padding-left: 1rem;
+          font-family: "Montserrat-Medium";
+          color: #61605E;
+        }
+      }
+      .title-banner {
+        color: #ED954A;
+        font-family: "BebasNeue";
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        span {
+          color: #202020;
+        }
+      }
+      .text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .content-select {
+    background-color: #fff;
+    background-image: url(/images/nn.svg);
+    background-size: cover;
+    right: 0;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 42px 33px -8px rgba(0,0,0,0.35);
+    font-size: .8rem;
+    order: 0;
+    @media (min-width: 768px) {
+      order: 1;
+      position: absolute;
+      
+      top: 20%;
+      right: 0;
+      padding: 2rem;
+      width: 45%;
+      border-radius: 5px;
+      box-shadow: 0px 42px 33px -8px rgba(0,0,0,0.35);
+      font-size: .8rem;
+    }
+    @media (min-width: 1024px) {
+      width: calc((960px / 2) - 5rem);
+      font-size: 1rem;
+    }
+    @media (min-width: 1200px) {
+      width: calc((1140px / 2) - 5rem);
+    }
+    @media (min-width: 1400px) {
+      width: calc((1320px / 2) - 5rem);
+      padding: 3rem 2rem;
+    }
+    @media (min-width: 1600px) {
+      padding: 5rem 2rem;
+    }
+    .title-select {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #202021;
+      font-family: "BebasNeue";
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .form-label {
+      font-family: "Montserrat-Medium";
+      color: #61605E;
+      font-size: .5rem;
+      @media (min-width: 360px) {
+        font-size: .8rem;
+      }
+    }
+    .btn-orange-black {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    .form-select {
+      &:focus {
+        border-color: #ED954A;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  .content-select-col {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    font-size: .7rem;
+    .title-select {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ED954A;
+      font-family: "BebasNeue";
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .form-label {
+      font-family: "Montserrat-Medium";
+      color: #61605E;
+    }
+    .btn-orange-black {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    .form-select {
+      &:focus {
+        border-color: #ED954A;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      justify-content: start;
+    }
+    .content-icon {
+      padding: .6rem .1rem;
+      background-color: #ffffffaa;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      @media (min-width: 500px) {
+        padding: .5rem;
+      }
+      img {
+        width: 50%;
+        @media (min-width: 365px) {
+          width: 70%;
+        }
+        @media (min-width: 500px) {
+          width: 100%;;
+        }
+      }
+    }
+    span {
+      font-family: "BebasNeue";
+      font-weight: 900;
+      letter-spacing: -.1px;
+      color: #202020;
+      font-size: .55rem;
+      @media (min-width: 440px) {
+        letter-spacing: 1.4px;
+        color: #202020;
+        font-size: .8rem;
+      }
+      @media (min-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

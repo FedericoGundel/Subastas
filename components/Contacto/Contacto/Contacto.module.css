@@ -1,0 +1,28 @@
+.section-contacto {
+  padding-bottom: 5%;
+}
+.section-contacto .content-contact {
+  text-align: center;
+}
+.section-contacto .content-contact .circle-contacto {
+  background-color: #FFE9D4;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.section-contacto .content-contact .enlaces {
+  transition: all 0.3s;
+}
+.section-contacto .content-contact .enlaces:hover {
+  color: #ED954A;
+}
+.section-contacto .horario {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}/*# sourceMappingURL=Contacto.module.css.map */
